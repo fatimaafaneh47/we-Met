@@ -49,7 +49,7 @@ function App() {
         <Routes>
           <Route path={`/`} element={<Dashboard />} />
           <Route path={`/groups`} element={<Groups />} />
-          <Route path={`/groupspost`} element={<GroupPost/>} />
+          <Route path={`/group/posts`} element={<GroupPost/>} />
           <Route path={`/post`} element={<PostDetails/>} />
           <Route path={`/post`} element={user ? <Details /> : <Login />} />
           <Route path={`/addpost`} element={user ? <Post /> : <Login />} />

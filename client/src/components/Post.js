@@ -54,7 +54,7 @@ const Post = () => {
           />
         </IconButton>
         <IconButton aria-label="Comment">
-         <ModeCommentIcon onClick={() => openInNewTab('http://localhost:3000/onepost')}/>
+         <ModeCommentIcon onClick={() => openInNewTab('http://localhost:3000/post')}/>
         </IconButton>
       </CardActions>
     </Card>
