@@ -5,13 +5,13 @@ import {
   Register,
   Navbar,
   Groups,
-  Post,
   Dashboard,
   Footer,
   Details,
 } from "./components";
 import { useEffect } from "react";
 import GroupPost from "./components/GroupPost";
+import PostDetails from "./components/PostDetails";
 // import axios from "axios";
 import { useAuthContext } from "./hooks/useAuthContext";
 function App() {
@@ -50,7 +50,7 @@ function App() {
           <Route path={`/`} element={<Dashboard />} />
           <Route path={`/groups`} element={<Groups />} />
           <Route path={`/groupspost`} element={<GroupPost/>} />
-          <Route path={`/post`} element={<Post/>} />
+          <Route path={`/post`} element={<PostDetails/>} />
           <Route path={`/post`} element={user ? <Details /> : <Login />} />
           <Route path={`/addpost`} element={user ? <Post /> : <Login />} />
           <Route
